@@ -21,7 +21,6 @@ Users must be able to perform the following operations:
 9. **Task Due Dates [NEW]**: Assign calendar due dates to tasks, flagging overdue items.
 10. **Task Inline Editing [NEW]**: Edit and update the name of any active task inline.
 11. **Task Categorization (Tags) [NEW]**: Group tasks under custom categories ("Work", "Personal", etc.).
-12. **Toggle All Tasks [NEW]**: Mark all tasks as completed or active in one action.
 
 ### 3. DOM Selectors & ID Mapping
 To enable automated E2E tests, the application UI must expose the following DOM selectors exactly:
