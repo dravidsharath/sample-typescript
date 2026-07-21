@@ -16,15 +16,23 @@ Users must be able to perform the following operations:
 4. **Filter Tasks**: Switch views between "All", "Active" (uncompleted), and "Completed" tasks.
 5. **Clear Completed**: Remove all tasks that are currently completed.
 6. **Task Counter**: Display the count of remaining active tasks.
+7. **Task Priority [NEW]**: Set task priority level (Low, Medium, High) with colored badges.
+8. **Search Filter [NEW]**: Search/filter tasks by name keyword dynamically.
+9. **Task Due Dates [NEW]**: Assign calendar due dates to tasks, flagging overdue items.
 
 ### 3. DOM Selectors & ID Mapping
 To enable automated E2E tests, the application UI must expose the following DOM selectors exactly:
 - **Input Field**: `id="todo-input"` (text input for new tasks)
+- **Priority Selector [NEW]**: `id="todo-priority-select"` (drop-down select for priority: Low, Medium, High)
+- **Due Date Selector [NEW]**: `id="todo-due-date-input"` (HTML date input selector)
+- **Search Input [NEW]**: `id="todo-search-input"` (text input for keyword search filtering)
 - **Add Button**: `id="add-todo-btn"` (submits/adds the task)
 - **List Container**: `id="todo-list"` (parent element list)
 - **Individual Task Item**: `id="todo-item-{index}"` (where `{index}` is the 0-indexed position of the item in the list)
 - **Task Item Checkbox**: `id="todo-checkbox-{index}"`
 - **Task Item Text**: `id="todo-text-{index}"` (displays task name; style should show `line-through` when completed)
+- **Task Priority Badge [NEW]**: `id="todo-priority-badge-{index}"` (displays "Low", "Medium", or "High")
+- **Task Due Date Display [NEW]**: `id="todo-due-date-{index}"` (displays the due date)
 - **Delete Button**: `id="delete-todo-btn-{index}"`
 - **Remaining Count**: `id="todo-count"` (text must contain the number of active tasks, e.g., `"1 items left"`)
 - **Filter "All" Button**: `id="filter-all"`
@@ -51,3 +59,4 @@ npm install
 npm run dev
 ```
 Starts Vite listening on `http://localhost:6713`.
+
