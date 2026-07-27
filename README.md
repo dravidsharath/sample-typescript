@@ -56,7 +56,7 @@ To enable deterministic automated UI testing (Playwright, Selenium, Cypress), th
 | **Delete Button** | `id="delete-todo-btn-{index}"` | Core | Removes item `{index}` |
 | **Remaining Count** | `id="todo-count"` | Core | Counter element (e.g. `"1 items left"`) |
 | **Filter: All** | `id="filter-all"` | Core | Show all tasks |
-| **Filter: Active** | `id="filter-active"` | Core | Show only active tasks |
+
 | **Filter: Completed** | `id="filter-completed"` | Core | Show only completed tasks |
 | **Clear Completed** | `id="clear-completed-btn"` | Core | Button to clear completed tasks |
 
